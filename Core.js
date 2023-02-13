@@ -4616,10 +4616,6 @@ Here's the list of my Commands.
  *━━━〈  🎆 Core 🎆  〉━━━*
 
 speak, miku, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script, admin 
- 
- *━━━〈  🎀 Owner 🎀  〉━━━*
-
-self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast 
 
  *━━━〈  ⭕ Group ⭕  〉━━━*
  
