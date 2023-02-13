@@ -156,6 +156,8 @@ I am *Nao Shion*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}
+\nFeel free to join our community!
+https://linktr.ee/neoanicom
 `
 
     let buttonMessage = {
@@ -169,7 +171,7 @@ Miku.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	let WAuserName = num
                     mikutext = `
-Sayonara 👋, loser},
+Sayonara 👋, loser,
 
 I hope you will come back soon, but we are not going to miss you though~
 `
