@@ -1393,6 +1393,10 @@ return list[Math.floor(list.length * Math.random())]
         reply (`*XD*`)
     }
 
+    if (smallinput=='Haikaru') {
+       reply (`*$pushname$*, do you mean Karu the creator of me?`)
+    }
+	
     if (smallinput=='op') {
         reply (`Hehe`)
     }
@@ -1406,7 +1410,7 @@ return list[Math.floor(list.length * Math.random())]
     }
 
     if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
-      reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
+      reply (`Aaaaaww it's okay lah *${pushname}* 😇. I am your fav bot afterall.`);
     }      
 
 switch(command) {
@@ -4829,12 +4833,12 @@ case 'add':{
 
 default:
 
-    if(isCmd){
-        if (isBan) return reply(mess.banned)	 			
-        if (isBanChat) return reply(mess.bangc)
-        reply (`No such command programmed *${pushname}* senpai! Type *${prefix}help* to get my full command list!`)
-
-    }	 			
+   // if(isCmd){
+   //     if (isBan) return reply(mess.banned)	 			
+   //     if (isBanChat) return reply(mess.bangc)
+   //     reply (`No such command programmed *${pushname}* senpai! Type *${prefix}help* to get my full command list!`)
+//
+ //   }	 			
 
 
 if (budy.startsWith('=>')) {
