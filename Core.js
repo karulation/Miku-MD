@@ -1386,7 +1386,7 @@ return list[Math.floor(list.length * Math.random())]
     }
    
     if (smallinput=='bot') {
-      reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Karu* and currently being hosted by *${OwnerName}*.  type  *${prefix}help* to get my full command list.`);
+      reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Karu*, founder of *Neo Anime Community*.  type  *${prefix}help* to get my full command list.`);
     }
 
     if (smallinput=='lol') {
@@ -4605,14 +4605,12 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-I am *Nao Shion*, a bot developed by *Karu*.
+I am *Nao Shion*, a bot developed by *Karu*, founder of *Neo Anime Community*.
 
 🔰 My prefix is:  ${prefix}
 
 Here's the list of my Commands.
 
-
- 
  *━━━〈  🎆 Core 🎆  〉━━━*
 
 speak, miku, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script, admin 
