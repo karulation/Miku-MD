@@ -7,9 +7,9 @@ global.autoReadAll = false
 global.antitags = true
 
 
-global.Owner = ['918101187835']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
-global.OwnerNumber = ['918101187835']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
-global.ownertag = ['918101187835']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
+global.Owner = ['0177637943']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
+global.OwnerNumber = ['0177637943']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
+global.ownertag = ['0177637943']  // -- Add multiple numbers like  ['918101967835','919357940276','917896587453']
 global.BotName = "Nao Shion bot"
 global.packname = "Nao Shion"
 global.author = "By: Karu Shion"
