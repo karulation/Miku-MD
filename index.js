@@ -169,9 +169,9 @@ Miku.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	let WAuserName = num
                     mikutext = `
-Sayonara 👋, @${WAuserName.split("@")[0]},
+Sayonara 👋, loser},
 
-I hope you will come back soon, but we are not going to miss you though Papa Karu taught me well MUAHAHAHHA!
+I hope you will come back soon, but we are not going to miss you though~
 `
 
     let buttonMessage = {
