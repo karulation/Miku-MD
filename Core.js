@@ -1185,8 +1185,8 @@ let cron = require('node-cron')
                                },
                   message: { 
                                 "videoMessage": { 
-                                "title": `Miku`,
-                                "h": `Miku`,
+                                "title": `Nao`,
+                                "h": `Nao`,
                                 'duration': '99999', 
                                 'gifPlayback': 'true', 
                                 'caption': `Karu`,
@@ -1334,7 +1334,7 @@ const ftroli = {
 
 
     const menulist = `
-    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: Karu to take your WhatsApp usage into next level.
+    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: Karu to take your WhatsApp usage into next level.\nJOIN OUR COMMUNITY NOW! https://linktr.ee/neoanicom
         
        「 System Info 」
     
@@ -4865,7 +4865,7 @@ qr, say, translate, fliptext, toletter, weather
 
 🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
 
-
+\nJOIN OUR COMMUNITY NOW! https://linktr.ee/neoanicom
 
 
  『  *${global.BotName}*  』
