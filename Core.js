@@ -1520,13 +1520,6 @@ case 'repo': case 'botrepo':
     reply(`*My Source Code:* https://github.com/FantoX001/Miku-MD`)
     break
 
-case 'nsfwmenu':
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!AntiNsfw) return reply(mess.nonsfw)
-        reply(` *━━━〈  📛 NSFW Menu 📛  〉━━━*\n\nahegao, ass, bdsm, cuckold, cum, ero, femdom, gangbang, foot, glasses, hentai, masturbation, orgy, panties, pussy, tentacles, things, yuri ,nsfwloli, blowjobgif, hentaivideo, trap, hneko, hwaifu`)
-    break
-
 case 'reaction': case 'react': case 'reactions': case 'r':
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
@@ -2235,40 +2228,6 @@ await Miku.sendMessage(m.chat, { delete: key })
    }
    }
    break
-
-
-   case 'nsfw': {
-    if (isBan) return reply(mess.banned)	 			
- if (isBanChat) return reply(mess.bangc)
- if (!m.isGroup) return replay(mess.grouponly)
- if (!isBotAdmins) return replay(mess.botadmin)
- if (!isAdmins && !isCreator) return replay(mess.useradmin)
- if (args[0] === "on") {
- if (AntiNsfw) return replay('Already activated')
- ntnsfw.push(from)
- replay('Enabled NSFW Commands!')
- var groupe = await Miku.groupMetadata(from)
- var members = groupe['participants']
- var mems = []
- members.map(async adm => {
- mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
- })
- Miku.sendMessage(from, {text: `\`\`\`「 Notice 」\`\`\`\n\nNSFW(not safe for work) feature has been enabled in this group, which means anyone here can accesss Adult commands!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
- } else if (args[0] === "off") {
- if (!AntiNsfw) return replay('Already deactivated')
- let off = ntnsfw.indexOf(from)
- ntnsfw.splice(off, 1)
- replay('Disabled NSFW Commands!')
- } else {
-   let buttonsntnsfw = [
-   { buttonId: `${prefix}nsfw on`, buttonText: { displayText: 'On' }, type: 1 },
-   { buttonId: `${prefix}nsfw off`, buttonText: { displayText: 'Off' }, type: 1 }
-   ]
-   await Miku.sendButtonText(m.chat, buttonsntnsfw, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.BotName}`, m)
-   }
-   }
-   break
-
 
    case 'ban': {
     if (isBan) return reply(mess.banned)	 			
@@ -3923,156 +3882,7 @@ case 'truth':
                            Miku.sendMessage(from, { image: buffer, caption: '*You have chosen Truth*\n'+ mikutruthww }, {quoted:m})
                            break
 
- /////////NSFW comm/////////////////                          
-
-//let bjif = await GIFBufferToVideoBuffer(bjf) 
-
-case 'nsfwloli' :  {
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-    if (!AntiNsfw) return reply(mess.nonsfw)
-    
-reply(mess.waiting)
- waifudhgd = await getBuffer(`https://api-reysekha.herokuapp.com/api/wallpaper/${command}?apikey=APIKEY  `)     
- let nsfwapireply = [
-    {buttonId: `${prefix}${command}`, buttonText: {displayText: `>>`}, type: 1},
-    ]
-  let nsfwapimess = {
-   image: waifudhgd,
-   caption:  `Here it is...`,
-  buttons: nsfwapireply,
-  headerType: 1
-  }     
-            await Miku.sendMessage(m.chat, nsfwapimess, { quoted:m }).catch(err => {
-                    return('Error!')
-                })
-            }
-break
-
-
-case 'ahegao' : case 'ass' : case 'bdsm' :  case 'cuckold' :  case 'cum' : case 'ero' :
-    case 'femdom' : case 'gangbang' : case 'foot' : case 'glasses':  case 'hentai': 
-     case 'masturbation': case 'neko': case 'orgy': case 'panties': 
-    case 'pussy': case 'tentacles': case 'things': case 'yuri': 
-{
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-    if (!AntiNsfw) return reply(mess.nonsfw)
-    
-    reply(mess.waiting)
-     waifudhgd = await getBuffer(`https://api-reysekha.herokuapp.com/api/nsfw/${command}?apikey=APIKEY`)     
-     let nsfwapireply = [
-        {buttonId: `${prefix}${command}`, buttonText: {displayText: `>>`}, type: 1},
-        ]
-      let nsfwapimess = {
-       image: waifudhgd,
-       caption:  `Here it is...`,
-      buttons: nsfwapireply,
-      headerType: 1
-      }     
-                await Miku.sendMessage(m.chat, nsfwapimess, { quoted:m }).catch(err => {
-                        return('Error!')
-                    })
-                }
-    break
-
-
-
-case 'blowjobgif': case 'bj' :
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-    if (!AntiNsfw) return reply(mess.nonsfw)
-reply(mess.waiting)
-bjd = await axios.get(`https://api.waifu.pics/nsfw/blowjob`)         
-  let bjf = await getBuffer(bjd.data.url)
-let bjif = await GIFBufferToVideoBuffer(bjf)   
-        await Miku.sendMessage(m.chat,{video: bjif, gifPlayback:true},{ quoted:m }).catch(err => {
-                    return reply('error..')
-                                    })
-break
-
-case 'hentaivid': case 'hentaivideo': {
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-    if (!AntiNsfw) return reply(mess.nonsfw)
-reply(mess.waiting)
-anu = await hentai()
-result912 = anu[Math.floor(Math.random(), anu.length)]
-Miku.sendMessage(m.chat, { video: { url: result912.video_1 }, caption: `Title : ${result912.title}\nCategory : ${result912.category}\n$Mimetype : ${result912.type}\nViews : ${result912.views_count}\nShares : ${result912.share_count}\nSource : ${result912.link}\nMedia Url : ${result912.video_1}` }, { quoted: m })
-}
-break
-
-case 'trap' :
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-    if (!AntiNsfw) return reply(mess.nonsfw)
-reply(mess.waiting)
- waifudd = await axios.get(`https://waifu.pics/api/nsfw/${command}`)       
- let trapbot = [
-    {buttonId: `${prefix}trap`, buttonText: {displayText: `>>`}, type: 1},
-    ]
-  let button2Messages = {
-   image: {url:waifudd.data.url},
-   caption:  `Here it is...`,
-  buttons: trapbot,
-  headerType: 1
-  }     
-            await Miku.sendMessage(m.chat, button2Messages, { quoted:m }).catch(err => {
-                    return('Error!')
-                })
-break
-
-case 'hentai-neko' :
-case 'hneko' :
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-    if (!AntiNsfw) return reply(mess.nonsfw)
-reply(mess.waiting)
-    waifudd = await axios.get(`https://waifu.pics/api/nsfw/neko`)
- let hnekobot = [
-    {buttonId: `${prefix+command}`, buttonText: {displayText: `>>`}, type: 1},
-    ]
-  let button3Messages = {
-   image: {url:waifudd.data.url},
-   caption:  `Nyaah...`,
-  buttons: hnekobot,
-  headerType: 1
-  }      
-            await Miku.sendMessage(m.chat, button3Messages, { quoted:m }).catch(err => {
-                    return('Error!')
-                })
-break
-
-case 'hentai-waifu' :
-case 'hwaifu' :
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-    if (!AntiNsfw) return reply(mess.nonsfw)
-reply(mess.waiting)
-    waifudd = await axios.get(`https://waifu.pics/api/nsfw/waifu`)         
- let nwaifubot = [
-    {buttonId: `${prefix+command}`, buttonText: {displayText: `>>`}, type: 1},
-    ]
-  let button4Messages = {
-   image: {url:waifudd.data.url},
-   caption:  `Here it is...`,
-  buttons: nwaifubot,
-  headerType: 1
-  }      
-            await Miku.sendMessage(m.chat, button4Messages, { quoted:m }).catch(err => {
-                    return('Error!')
-                })
-break
-
-
-/////////////////////////// NFFW end /////////////////////
+ 
 
 case 'smug2':
     if (isBan) return reply(mess.banned)	 			
@@ -4859,11 +4669,6 @@ reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomec
 
 qr, say, translate, fliptext, toletter, weather
 
- *━━━〈  💥 NSFW 💥  〉━━━*
-
-🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
-
-🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
 
 \nJOIN OUR COMMUNITY NOW! https://linktr.ee/neoanicom
 
