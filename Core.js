@@ -1393,7 +1393,7 @@ return list[Math.floor(list.length * Math.random())]
         reply (`*XD*`)
     }
 
-    if (smallinput=='Haikaru') {
+    if (smallinput==('Haikaru')||(smallinput=='haikaru')) {
        reply (`*$pushname$*, do you mean Karu the creator of me?`)
     }
 	
