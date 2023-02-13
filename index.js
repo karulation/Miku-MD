@@ -19,7 +19,7 @@ const { color } = require('./lib/color')
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
 async function startMiku() {
-console.log(color(figlet.textSync('Miku Bot MD', {
+console.log(color(figlet.textSync('Nao Shion Bot', {
 		font: 'Pagga',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
@@ -27,14 +27,14 @@ console.log(color(figlet.textSync('Miku Bot MD', {
 		whitespaceBreak: true
         }), 'yellow'))
 
-console.log(color('\nHello, I am Fantox, the main developer of this bot.\n\nThanks for using: Miku Bot','aqua'))
-console.log(color('\nYou can follow me on GitHub: FantoX001','aqua'))
+console.log(color('\nHello, I am Karu, the main developer of this bot.\n\nThanks for using: Nao Shion Bot','aqua'))
+console.log(color('\nYou can follow me on Instagram: @karulation','aqua'))
 
     let { version, isLatest } = await fetchLatestBaileysVersion()
     const Miku = MikuConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Miku by: Fantox','Safari','1.0.0'],
+        browser: ['Nao Shion by: Karu Shion','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -92,7 +92,7 @@ Miku.ev.on('groups.update', async pea => {
         try {
         ppgc = await Miku.profilePictureUrl(pea[0].id, 'image')
         } catch {
-        ppgc = 'https://wallpapercave.com/wp/wp10524580.jpg'
+        ppgc = 'https://i.ibb.co/1vzSrFn/Commission2bustup.png'
         }
         let wm_fatih = { url : ppgc }
         if (pea[0].announce == true) {
@@ -134,13 +134,13 @@ Miku.ev.on('group-participants.update', async (anu) => {
                 try {
                     ppuser = await Miku.profilePictureUrl(num, 'image')
                 } catch {
-                    ppuser = 'https://wallpapercave.com/wp/wp10753770.jpg'
+                    ppuser = 'https://i.ibb.co/1vzSrFn/Commission2bustup.png'
                 }
 
                 try {
                     ppgroup = await Miku.profilePictureUrl(anu.id, 'image')
                 } catch {
-                    ppgroup = 'https://telegra.ph/file/4cc2712eee93c105f6739.jpg'
+                    ppgroup = 'https://i.ibb.co/1vzSrFn/Commission2bustup.png'
                 }
 
                 let targetname = await Miku.getName(num)
@@ -152,7 +152,7 @@ Miku.ev.on('group-participants.update', async (anu) => {
                 mikutext = `
 Hello @${WAuserName.split("@")[0]},
 
-I am *Miku Nakano*, Welcome to ${metadata.subject}.
+I am *Nao Shion*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}
@@ -171,7 +171,7 @@ Miku.sendMessage(anu.id, buttonMessage)
                     mikutext = `
 Sayonara 👋, @${WAuserName.split("@")[0]},
 
-I hope you will come back soon, but we are not going to miss you though!
+I hope you will come back soon, but we are not going to miss you though Papa Karu taught me well MUAHAHAHHA!
 `
 
     let buttonMessage = {
