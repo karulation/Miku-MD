@@ -28,7 +28,7 @@ console.log(color(figlet.textSync('Nao Shion Bot', {
         }), 'yellow'))
 
 console.log(color('\nHello, I am Karu, the main developer of this bot.\n\nThanks for using: Nao Shion Bot','aqua'))
-console.log(color('\nYou can follow me on Instagram: @karulation','aqua'))
+console.log(color('\nYou can follow me on Instagram: @karulation\nJOIN OUR COMMUNITY NOW! https://linktr.ee/neoanicom','aqua'))
 
     let { version, isLatest } = await fetchLatestBaileysVersion()
     const Miku = MikuConnect({
