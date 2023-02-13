@@ -14,7 +14,7 @@ const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter')
 const path = require('path')
 const os = require('os')
 const { AnimeWallpaper } = require("anime-wallpaper")
- const { TiktokDownloader } = require('./lib/tiktokdl') 
+const { TiktokDownloader } = require('./lib/tiktokdl') 
 const moment = require('moment-timezone')
 const { JSDOM } = require('jsdom')
 const speed = require('performance-now')
@@ -4682,7 +4682,7 @@ qr, say, translate, fliptext, toletter, weather
     {buttonId: `${prefix}owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
                 let buttonMessage = {
-                    video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,
+                    video:fs.readFileSync('./system/naoxai.mp4'),gifPlayback:true,
                     caption: helpmenu,
                     footer: `${BotName}`,
                     buttons: buttonshelpm,
