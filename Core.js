@@ -4686,7 +4686,7 @@ qr, say, translate, fliptext, toletter, weather
     {buttonId: `${prefix}owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
                 let buttonMessage = {
-                    video:fs.readFileSync('./system/naoxai.mp4'),gifPlayback:true,
+                    video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,
                     caption: helpmenu,
                     footer: `${BotName}`,
                     buttons: buttonshelpm,
@@ -4712,7 +4712,7 @@ case '':
                 {buttonId: `${prefix}help`, buttonText: {displayText: 'Help'}, type: 1}
                 ]
                 let buttonMessage = {
-                    video:fs.readFileSync('./system/naoxai.mp4'),gifPlayback:true,
+                    video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,
                     caption: needhelpmenu,
                     footer: `${global.BotName}`,
                     buttons: butRun,
