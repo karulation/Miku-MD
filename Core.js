@@ -7,7 +7,7 @@ const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, g
 const zMiku = require("@adiwajshing/baileys")
 const fs = require('fs')
 const util = require('util')
-const chalk = require('chalk')x
+const chalk = require('chalk')
 const { exec, spawn, execSync } = require("child_process")
 const axios = require('axios')
 const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter')
