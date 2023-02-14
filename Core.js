@@ -7,7 +7,7 @@ const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, g
 const zMiku = require("@adiwajshing/baileys")
 const fs = require('fs')
 const util = require('util')
-const chalk = require('chalk')
+const chalk = require('chalk')x
 const { exec, spawn, execSync } = require("child_process")
 const axios = require('axios')
 const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter')
@@ -4613,7 +4613,7 @@ Here's the list of my Commands.
 
  *━━━〈  🎆 Core 🎆  〉━━━*
 
-speak, miku, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script, admin 
+speak, stalk, profile, help, delete, deleteall, listgc, listpc, script, admin 
 
  *━━━〈  ⭕ Group ⭕  〉━━━*
  
@@ -4665,10 +4665,19 @@ qr, say, translate, fliptext, toletter, weather
 
 
 \nJOIN OUR COMMUNITY NOW! https://linktr.ee/neoanicom
+┍————- /ᐠ｡ꞈ｡ᐟ\ ————┑
+NEO LINKS FOR EVERY PLATFORM
+≿━━━━༺❀༻━━━━≾
+NEO ASTERISK (ANIME GROUP)
+https://chat.whatsapp.com/C6e7yG6CZVOHAGobMLr7xO
+≿━━━━༺❀༻━━━━≾
+NEO IOTA (ANIME GROUP)
+https://chat.whatsapp.com/I66bF7yF6Yr0D2Q34EMm3f
+┕————(..)(..) ∫∫————-┙
 
 
  『  *${global.BotName}*  』
- Powered by: *Karu*
+ Powered by: *Karu, Founder of Neo Anime Community*
 
  🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".
