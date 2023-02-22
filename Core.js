@@ -3641,6 +3641,7 @@ let jawab = `👫 Soulmates
 @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
 let ments = [me, jodoh]
 let buttons = [
+	
 { buttonId: '❤️', buttonText: { displayText: 'Be my Soulmate ❤️' }, type: 1 }
 ]
 await Miku.sendButtonText(m.chat, buttons, jawab, Miku.user.name, m, {mentions: ments})
@@ -3765,17 +3766,20 @@ case 'charactercheck':
          "shout you bastard in front of your mom/papa",
          "change the name to i am idiot for 24 hours",
          "slap urself firmly and send the sound of slap through voice note😂",
-         "say i love the bot owner Karu through voice note",
-         "send your gf/bf pic here",
-         "make any tiktok dance challenge video and put it on status, u can delete it after 5hrs",
-         "breakup with your best friend for 5hrs without telling him/her that its a dare",
+         "say i love Nao-chan through voice note",
+         "who is the creator of me?",
+         "make any tiktok dance challenge video and put it on status, u can delete it after 3 minutes",
+         "breakup with your best friend for 2 minutes without telling him/her that its a dare",
           "tell one of your frnd that u love him/her and wanna marry him/her, without telling him/her that its a dare",
-          "say i love depak kalal through voice note",
-          "write i am feeling horny and put it on status, u can delete it only after 5hrs",
-          "write i am lesbian and put it on status, u can delete only after 5hrs",
+          "say i love loli through voice note",
+          "write i am feeling horny and put it on status, u can delete it only after 2minutes",
+          "write i am lesbian and put it on status, u can delete only after 2minutes",
           "kiss your mommy or papa and say i love you😌",
           "put your father name on status for 5hrs",
-          "send abusive words in any grup, excepting this grup, and send screenshot proof here"
+          "chant any magic chanting through voice note"
+	  "Join Neo Asterisk now!\n https://chat.whatsapp.com/C6e7yG6CZVOHAGobMLr7xO"
+	  "Join Neo Iota now!\n https://chat.whatsapp.com/I66bF7yF6Yr0D2Q34EMm3f"
+	  "Join Neo Arcus now!\n https://chat.whatsapp.com/HAPluQBHpzaAMPuNjE5jdK"
      ]
                    const Mikudareww = dare[Math.floor(Math.random() * dare.length)]
                    buffer = await getBuffer(`https://wallpapercave.com/wp/wp10524609.jpg`)
@@ -3857,7 +3861,7 @@ case 'truth':
                  "Mention the incident that makes you hurt that you still remember",
                  "what achievements have you got this year?",
                  "what was your worst habit at school?",
-                 "do you love the bot creator Karu?",
+                 "do you love the me?",
                  "have you ever thought of taking revenge from ur teacher?",
                  "do you like current prime minister of ur country",
                  "you non veg or veg",
