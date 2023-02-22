@@ -3776,10 +3776,10 @@ case 'charactercheck':
           "write i am lesbian and put it on status, u can delete only after 2minutes",
           "kiss your mommy or papa and say i love you😌",
           "put your father name on status for 5hrs",
-          "chant any magic chanting through voice note"
-	  "Join Neo Asterisk now!\n https://chat.whatsapp.com/C6e7yG6CZVOHAGobMLr7xO"
-	  "Join Neo Iota now!\n https://chat.whatsapp.com/I66bF7yF6Yr0D2Q34EMm3f"
-	  "Join Neo Arcus now!\n https://chat.whatsapp.com/HAPluQBHpzaAMPuNjE5jdK"
+          "chant any magic chanting through voice note",
+	  "Join Neo Asterisk now!\n https://chat.whatsapp.com/C6e7yG6CZVOHAGobMLr7xO",
+	  "Join Neo Iota now!\n https://chat.whatsapp.com/I66bF7yF6Yr0D2Q34EMm3f",
+	  "Join Neo Arcus now!\n https://chat.whatsapp.com/HAPluQBHpzaAMPuNjE5jdK",
      ]
                    const Mikudareww = dare[Math.floor(Math.random() * dare.length)]
                    buffer = await getBuffer(`https://wallpapercave.com/wp/wp10524609.jpg`)
